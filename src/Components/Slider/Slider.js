@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { sliderItems } from './sliderData'
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import styled from "styled-components";
-import { mobile } from "../responsive";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
   width: 100%;
