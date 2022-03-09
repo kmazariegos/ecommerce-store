@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'; 
 import { sliderItems } from './sliderData'
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import styled from "styled-components";
