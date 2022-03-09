@@ -3,7 +3,6 @@ import './Navbar.css'
 import Search from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { fontSize } from '@mui/system';
 
 
 const Navbar = () => {
