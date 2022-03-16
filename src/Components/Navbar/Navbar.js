@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
 
         <div className='nav-center'>
-          <h1 className='nav-logo'>Shopify</h1>
+          <h1 className='nav-logo'>BLND</h1>
         </div>
 
         <div className='nav-right'>
