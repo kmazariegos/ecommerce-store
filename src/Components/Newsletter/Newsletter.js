@@ -5,7 +5,7 @@ import { mobile } from "../../responsive";
 
 const Container = styled.div`
   height: 60vh;
-  background-color: #fcf5f5;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,7 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 70px;
   margin-bottom: 20px;
+  color: white;
 `;
 
 const Desc = styled.div`
@@ -22,6 +23,7 @@ const Desc = styled.div`
   font-weight: 300;
   margin-bottom: 20px;
   ${mobile({ textAlign: "center" })}
+  color: white;
 `;
 
 const InputContainer = styled.div`
