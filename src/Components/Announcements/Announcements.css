@@ -1,8 +1,8 @@
 .a-container{ 
     font-size: 15px;
     height: 30px;
-    background-color: rgb(235, 203, 157);
-    color: rgb(44, 44, 44);
+    background-color: black;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;

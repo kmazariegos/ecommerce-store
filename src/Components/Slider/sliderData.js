@@ -1,21 +1,28 @@
+import slide2 from '../../Images/slide2.png'
+
+import slide3 from '../../Images/slide3.png'
+
+import slide4 from '../../Images/slide4.png'
+
+
 export const sliderItems = [ 
     {
       id: 1,
-      img: "https://i.ibb.co/7z4bd6t/image57310.webp",
+      img: slide2,
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f0cea1",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/7z4bd6t/image57310.webp",
+      img: slide3,
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f0cea1",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/7z4bd6t/image57310.webp",
+      img: slide4,
       title: "LOUNGEWEAR",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f0cea1",
