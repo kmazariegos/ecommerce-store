@@ -43,7 +43,7 @@ const ProductList = () => {
         <Announcement></Announcement>
         <Navbar></Navbar>
 
-        <Title>Dresses</Title>
+        <Title>Furniture</Title>
         <FilterContainer>
             <Filter>
                 <FilterText>Filter Products:</FilterText>

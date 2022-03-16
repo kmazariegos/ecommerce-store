@@ -6,6 +6,7 @@ import Newsletter from '../../Components/Newsletter/Newsletter'
 import Footer from '../../Components/Footer/Footer'
 import {mobile} from '../../responsive'
 import { Add, Remove } from "@mui/icons-material";
+import sofa from '../../Images/sofa3.png'
 
 const Container = styled.div``;
 
@@ -125,10 +126,10 @@ const Product = () => {
 
         <Wrapper>
             <ImgContainer>
-                <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+                <Image src={sofa} />
             </ImgContainer>
             <InfoContainer>
-                <Title>Denim Jumpsuit</Title>
+                <Title>Velvet Sofa</Title>
                 <Desc>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                     venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at

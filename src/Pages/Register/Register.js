@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import { mobile } from "../../responsive";
+import { mobile } from "../../responsive"; 
+import slide2 from '../../Images/slide2.png'
+
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: whitesmoke;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(${slide2});
 `;
 
 const Wrapper = styled.div`
@@ -44,7 +46,7 @@ const Button = styled.button`
   width: 40%;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
+  background-color: black;
   color: white;
   cursor: pointer;
 `;

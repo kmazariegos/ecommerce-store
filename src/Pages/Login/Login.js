@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import {mobile} from "../../responsive";
+import slide2 from '../../Images/slide2.png'
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: whitesmoke;
+  background-image: url(${slide2});
   background-size: cover;
   display: flex;
   align-items: center;

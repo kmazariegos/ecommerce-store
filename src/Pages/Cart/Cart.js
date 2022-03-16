@@ -5,6 +5,8 @@ import Announcement from '../../Components/Announcements/Announcements'
 import Footer from '../../Components/Footer/Footer'
 import {mobile} from '../../responsive'
 import { Add, Remove } from "@mui/icons-material";
+import sofa2 from '../../Images/sofa2.png'
+import table2 from '../../Images/table2.png'
 
 const Container = styled.div``;
 
@@ -172,17 +174,17 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetail>
-                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A" />
+                <Image src={sofa2} />
                 <Details>
                   <ProductName>
-                    <b>Product:</b> JESSIE THUNDER SHOES
+                    <b>Product:</b> CB2 Sofa
                   </ProductName>
                   <ProductId>
                     <b>ID:</b> 93813718293
                   </ProductId>
                   <ProductColor color="black" />
                   <ProductSize>
-                    <b>Size:</b> 37.5
+                    <b>Size:</b> L
                   </ProductSize>
                 </Details>
               </ProductDetail>
@@ -192,16 +194,16 @@ const Cart = () => {
                   <ProductAmount>2</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 30</ProductPrice>
+                <ProductPrice>$ 300</ProductPrice>
               </PriceDetail>
             </Product>
             <Hr />
             <Product>
               <ProductDetail>
-                <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
+                <Image src={table2} />
                 <Details>
                   <ProductName>
-                    <b>Product:</b> HAKURA T-SHIRT
+                    <b>Product:</b> CB2 Table
                   </ProductName>
                   <ProductId>
                     <b>ID:</b> 93813718293
@@ -218,7 +220,7 @@ const Cart = () => {
                   <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 20</ProductPrice>
+                <ProductPrice>$ 200</ProductPrice>
               </PriceDetail>
             </Product>
           </Info>
