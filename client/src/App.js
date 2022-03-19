@@ -7,39 +7,26 @@ import ProductList from './Pages/ProductList/ProductList';
 import Register from './Pages/Register/Register';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
+  Routes,
+  Route
 } from "react-router-dom";
-
-
 
 
 function App() {
   const user = true;
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/products/:category">
-            <ProductList />
-          </Route>
-          <Route path="/product/:id">
-            <Product />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-          <Route path="/register">
-            {user ? <Redirect to="/" /> : <Register />}
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route path="/products/:category" element={<ProductList />}></Route>
+        <Route path="/product/:id" element={<Product />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/login" element={user ? <Login/> : <Home />}></Route>
+        <Route path="/register" element={user ? <Register/> : <Home />}></Route>
+      </Routes>
+    </Router>
+  </div>
   );
 }
 
