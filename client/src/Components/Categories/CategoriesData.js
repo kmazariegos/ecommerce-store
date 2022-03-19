@@ -8,15 +8,18 @@ import sofa from '../../Images/sofa1.png';
       id: 1,
       img: sofa,
       title: "Sofas",
+      cat: "sofa"
     },
     {
       id: 2,
       img: chair,
       title: "Chairs",
+      cat: "chair"
     },
     {
       id: 3,
       img: table,
       title: "Tables",
+      cat: "table"
     },
   ];
