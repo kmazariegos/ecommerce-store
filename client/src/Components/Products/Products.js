@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { popularProducts } from './ProductsData'
+// import { popularProducts } from './ProductsData'
 import styled from "styled-components";
 import Product from '../Product/Product'
 import { useState } from 'react';
