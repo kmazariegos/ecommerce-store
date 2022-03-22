@@ -6,6 +6,14 @@ import {
     ShoppingCartOutlined,
 } from "@mui/icons-material";
 // import {Link} from 'react-router-dom';
+// import table2 from '../../Images/table2.png'
+// import table3 from '../../Images/table3.png'
+import chair2 from '../../Images/chair2.png'
+// import chair3 from '../../Images/chair3.png'
+// import sofa2 from '../../Images/sofa2.png'
+// import sofa3 from '../../Images/sofa3.png'
+// import sofa4 from '../../Images/sofa4.png'
+// import table4 from '../../Images/table4.png'
 
 
 const Info = styled.div`
@@ -70,10 +78,11 @@ const Icon = styled.div`
 
 
 const Product = ({item}) => { 
+  console.log(item, 'this is the item')
   return (
     <Container>
         <Circle />
-        <Image src={item.img} />
+        <Image src={chair2} />
         <Info>
             <Icon>
               <ShoppingCartOutlined />
