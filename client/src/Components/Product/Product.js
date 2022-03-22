@@ -8,7 +8,6 @@ import {
 // import {Link} from 'react-router-dom';
 // import table2 from '../../Images/table2.png'
 // import table3 from '../../Images/table3.png'
-import chair2 from '../../Images/chair2.png'
 // import chair3 from '../../Images/chair3.png'
 // import sofa2 from '../../Images/sofa2.png'
 // import sofa3 from '../../Images/sofa3.png'
@@ -78,11 +77,11 @@ const Icon = styled.div`
 
 
 const Product = ({item}) => { 
-  console.log(item, 'this is the item')
+  console.log(typeof(item.img), 'this is the item')
   return (
     <Container>
         <Circle />
-        <Image src={chair2} />
+        <Image src={item.img}/>
         <Info>
             <Icon>
               <ShoppingCartOutlined />
