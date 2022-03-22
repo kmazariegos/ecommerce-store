@@ -67,12 +67,11 @@ const Icon = styled.div`
 `;
 
 
-const Product = ({item}) => { 
-  console.log(item.img, 'this is the item')
+const Product = ({item}) => {
   return (
     <Container>
         <Circle />
-        <Image src='images/chair1.png'/>
+        <Image src={item.img}/>
         <Info>
             <Icon>
               <ShoppingCartOutlined />
