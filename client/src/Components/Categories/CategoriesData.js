@@ -1,24 +1,19 @@
-import chair from '../../Images/chair1.png';
-import table from '../../Images/table1.png';
-import sofa from '../../Images/sofa1.png';
-
-  
   export const categories = [
     {
       id: 1,
-      img: sofa,
+      img: 'images/sofa1.png',
       title: "Sofas",
       cat: "sofa"
     },
     {
       id: 2,
-      img: chair,
+      img: 'images/chair1.png',
       title: "Chairs",
       cat: "chair"
     },
     {
       id: 3,
-      img: table,
+      img: "images/table1.png",
       title: "Tables",
       cat: "table"
     },

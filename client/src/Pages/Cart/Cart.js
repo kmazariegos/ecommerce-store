@@ -5,8 +5,6 @@ import Announcement from '../../Components/Announcements/Announcements'
 import Footer from '../../Components/Footer/Footer'
 import {mobile} from '../../responsive'
 import { Add, Remove } from "@mui/icons-material";
-import sofa2 from '../../Images/sofa2.png'
-import table2 from '../../Images/table2.png'
 
 const Container = styled.div``;
 
@@ -174,7 +172,7 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetail>
-                <Image src={sofa2} />
+                <Image src='images/chair.png' />
                 <Details>
                   <ProductName>
                     <b>Product:</b> CB2 Sofa
@@ -200,7 +198,7 @@ const Cart = () => {
             <Hr />
             <Product>
               <ProductDetail>
-                <Image src={table2} />
+                <Image src='images/chair.png' />
                 <Details>
                   <ProductName>
                     <b>Product:</b> CB2 Table

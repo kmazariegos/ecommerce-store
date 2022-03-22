@@ -6,7 +6,6 @@ import Newsletter from '../../Components/Newsletter/Newsletter'
 import Footer from '../../Components/Footer/Footer'
 import {mobile} from '../../responsive'
 import { Add, Remove } from "@mui/icons-material";
-import sofa from '../../Images/sofa3.png'
 
 const Container = styled.div``;
 
@@ -126,7 +125,7 @@ const Product = () => {
 
         <Wrapper>
             <ImgContainer>
-                <Image src={sofa} />
+                <Image src='images/chair1.png'/>
             </ImgContainer>
             <InfoContainer>
                 <Title>Velvet Sofa</Title>
