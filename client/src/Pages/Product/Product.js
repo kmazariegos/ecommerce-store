@@ -139,20 +139,20 @@ const Product = () => {
     getProduct();
   }, [id]);
 
-  const handleQuantity = (type) => {
+const handleQuantity = (type) => {
     if (type === "dec") {
       quantity > 1 && setQuantity(quantity - 1);
     } else {
       setQuantity(quantity + 1);
     }
-  };
+};
 
-  const handleClick = () => {
+const handleClick = () => {
     dispatch(
       addProduct({ ...product, quantity, color, size })
     );
-  };
-  return (
+};
+return (
     <Container>
       <Navbar />
       <Announcement />
