@@ -154,18 +154,16 @@ const Product = () => {
                 <FilterContainer>
                     <Filter>
                     <FilterTitle>Color</FilterTitle>
-                    <FilterColor color="black" />
-                    <FilterColor color="darkblue" />
-                    <FilterColor color="gray" />
+                    {product.color?.map((c) => (
+                    <FilterColor color={c} key={c} onClick={() => setColor(c)} />
+                    ))}
                     </Filter>
                     <Filter>
                     <FilterTitle>Size</FilterTitle>
-                    <FilterSize>
-                        <FilterSizeOption>XS</FilterSizeOption>
-                        <FilterSizeOption>S</FilterSizeOption>
-                        <FilterSizeOption>M</FilterSizeOption>
-                        <FilterSizeOption>L</FilterSizeOption>
-                        <FilterSizeOption>XL</FilterSizeOption>
+                    <FilterSize onChange={(e) => setSize(e.target.value)}>
+                      {product.size?.map((s) => (
+                        <FilterSizeOption key={s}>{s}</FilterSizeOption>
+                      ))}
                     </FilterSize>
                     </Filter>
                 </FilterContainer>
