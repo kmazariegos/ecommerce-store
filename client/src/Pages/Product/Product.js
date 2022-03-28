@@ -143,18 +143,14 @@ const Product = () => {
 
         <Wrapper>
             <ImgContainer>
-                <Image src='images/chair1.png'/>
+                <Image src={product.img}/>
             </ImgContainer>
             <InfoContainer>
-                <Title>Velvet Sofa</Title>
+                <Title>{product.title}</Title>
                 <Desc>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                    venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
-                    iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-                    tristique tortor pretium ut. Curabitur elit justo, consequat id
-                    condimentum ac, volutpat ornare.
+                    {product.desc}
                 </Desc>
-                <Price>$ 20</Price>
+                <Price>$ {product.price}</Price>
                 <FilterContainer>
                     <Filter>
                     <FilterTitle>Color</FilterTitle>
