@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components' 
 import Navbar from '../../Components/Navbar/Navbar'
 import Announcement from '../../Components/Announcements/Announcements'
 import Newsletter from '../../Components/Newsletter/Newsletter'
