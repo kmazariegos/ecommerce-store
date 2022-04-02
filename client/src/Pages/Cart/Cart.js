@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Announcement from '../../Components/Announcements/Announcements'
 import Footer from '../../Components/Footer/Footer'
 import {mobile} from '../../responsive'
-import { Add, Remove } from "@mui/icons-material";
+import { Add, Remove } from "@mui/icons-material"; 
 
 const Container = styled.div``;
 
