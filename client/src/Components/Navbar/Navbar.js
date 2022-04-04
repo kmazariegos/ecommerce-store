@@ -1,10 +1,9 @@
-import { Badge } from "@mui/icons-material";
 import { Search, ShoppingCartOutlined } from "@mui/icons-material";
+import { Badge } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive"; 
-import { useSelector } from "react-redux";
-import { Routes, Router } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -53,6 +52,7 @@ const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
+
 const Right = styled.div`
   flex: 1;
   display: flex;
@@ -69,7 +69,6 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
-  const quantity = useSelector(state=>state.cart.quantity)
   return (
     <Container>
       <Wrapper>
@@ -84,35 +83,15 @@ const Navbar = () => {
           <Logo>FRN</Logo>
         </Center>
         <Right>
-
-          {/* <MenuItem>REGISTER</MenuItem>
+          <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <Link to="/cart">
           <MenuItem>
-            <Badge badgeContent={quantity} color="primary">
+            <Badge color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
-          </Link> */}
-
-          <Router>
-
-          <nav className='homeNav'>
-            <Link to="/" className='n-logo'>karla</Link>
-            <Link to="/" className='n-logo-p'>Home</Link>
-            <Link to="/projects" className='n-logo-p'> Projects </Link>
-            <Link to="/resume" className='n-logo-p'> Resume </Link>
-          </nav>
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/resume" element={<Resume/>} />
-            <Route path="/projects" element={<ProductPage/>}/>
-          </Routes>
-
-          </Router>
-
-
+          </Link>
         </Right>
       </Wrapper>
     </Container>
