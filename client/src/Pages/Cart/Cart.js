@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
 import { useNavigate } from "react-router-dom";
 
-const KEY = process.env.REACT_APP_STRIPE;
+
 
 const Container = styled.div``;
 
@@ -183,7 +183,7 @@ const Cart = () => {
     };
     stripeToken && makeRequest();
   }, [stripeToken, cart.total, history]);
-  
+
   return (
     <Container>
       <Navbar />
