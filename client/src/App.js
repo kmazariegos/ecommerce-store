@@ -17,7 +17,7 @@ import { useSelector } from "react-redux";
 function App() {
   const user = useSelector((state) => state.user.currentUser);
   return (
-    <div className="App">
+    <div className="App"> 
     <Router>
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>

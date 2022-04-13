@@ -19,74 +19,21 @@ import { useSelector } from "react-redux";
 function App() {
   const admin = useSelector((state) => state.user.currentUser);
   return (
-    // <Router>
-    //   <Switch>
-    //     <Route path="/login">
-    //       <Login />
-    //     </Route>
-    //     {admin && (
-    //       <>
-    //         <Topbar />
-    //         <div className="container">
-    //           <Sidebar />
-    //           <Route exact path="/">
-    //             <Home />
-    //           </Route>
-    //           <Route path="/users">
-    //             <UserList />
-    //           </Route>
-    //           <Route path="/user/:userId">
-    //             <User />
-    //           </Route>
-    //           <Route path="/newUser">
-    //             <NewUser />
-    //           </Route>
-    //           <Route path="/products">
-    //             <ProductList />
-    //           </Route>
-    //           <Route path="/product/:productId">
-    //             <Product />
-    //           </Route>
-    //           <Route path="/newproduct">
-    //             <NewProduct />
-    //           </Route>
-    //         </div>
-    //       </>
-    //     )}
-    //   </Switch>
-    // </Router>
-
     <Router>
       <Routes>
-      <Route path="/login">
-        <Login />
-      </Route>
+      <Route path="/login" element={<Login/>}></Route>
       {admin && (
         <>
           <Topbar />
           <div className="container">
             <Sidebar />
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/users">
-              <UserList />
-            </Route>
-            <Route path="/user/:userId">
-              <User />
-            </Route>
-            <Route path="/newUser">
-              <NewUser />
-            </Route>
-            <Route path="/products">
-              <ProductList />
-            </Route>
-            <Route path="/product/:productId">
-              <Product />
-            </Route>
-            <Route path="/newproduct">
-              <NewProduct />
-            </Route>
+            <Route exact path="/" element={<Home/>}></Route>
+            <Route path="/users" element={<UserList/>}></Route>
+            <Route path="/user/:userId" element={<User/>}></Route>
+            <Route path="/newUser" element={<NewUser/>}></Route>
+            <Route path="/products" element={<ProductList/>}></Route>
+            <Route path="/product/:productId" element={<Product/>}></Route>
+            <Route path="/newproduct" element={<NewProduct/>}></Route>
           </div>
         </>
       )}
