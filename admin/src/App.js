@@ -1,11 +1,13 @@
-import Sidebar from "./components/sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar"; 
+// import Sidebar from "./components/sidebar/Sidebar";
+// import Topbar from "./components/topbar/Topbar"; 
 import "./App.css";
 import Home from "./pages/home/Home"; 
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Link,
+  Navigate
 } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
@@ -17,16 +19,24 @@ import Login from "./pages/login/Login";
 import { useSelector } from "react-redux";
 
 function App() {
-  const admin = useSelector((state) => state.user.currentUser);
+  const admin = useSelector((state) => state.user.currentUser.userName === 'karla');
   return (
+    <div>
+    {/* <Topbar /> 
+    <Sidebar /> */}
     <Router>
-        <Topbar /> 
-        <Sidebar />
+      <nav className='homeNav'>
+        <Link to="/" className="links">Home</Link>
+        <Link to="/login" className="links">Logout</Link>
+        <Link to="/users" className="links">Users</Link>
+        <Link to="/user/:userId" className="links">User</Link>
+        <Link to="/newUser" className="links">NewUser</Link>
+        <Link to="/products" className="links">Products</Link>
+        <Link to="/newproduct" className="links">NewProduct</Link>
+      </nav>
       <Routes>
-      <Route path="/login" element={<Login/>}></Route>
-      {console.log(admin, 'this is admin')}
-      {admin && (
-        <>
+      <Route path="/login" element={admin ? <Navigate to="/"/> : <Login/>}></Route>
+      {console.log(admin, 'admin worked in App page, so its logged in')}
             <Route exact path="/" element={<Home/>}></Route>
             <Route path="/users" element={<UserList/>}></Route>
             <Route path="/user/:userId" element={<User/>}></Route>
@@ -34,10 +44,9 @@ function App() {
             <Route path="/products" element={<ProductList/>}></Route>
             <Route path="/product/:productId" element={<Product/>}></Route>
             <Route path="/newproduct" element={<NewProduct/>}></Route>
-        </>
-      )}
       </Routes>
-  </Router>
+    </Router>
+  </div>
   );
 }
 

@@ -8,3 +8,27 @@
     text-decoration: none;
     color: inherit;
 }
+
+.homeNav{
+    height: 20vh;  
+    position: relative;
+    background-color: beige;
+    color: white;
+    text-align: center;
+}
+
+.links{
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    font-family: Poppins, sans-serif;
+    color: #283b7d;
+    font-size: 18px;
+    line-height: 58px;
+    text-decoration: none;
+    max-width: 100%;
+    display: inline-block;
+    margin: 10px;
+    align-items: center;
+}
