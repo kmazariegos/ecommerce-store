@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
+  margin-bottom: 20px;
 `;
 
 const Wrapper = styled.div`
@@ -52,7 +53,6 @@ const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
@@ -83,8 +83,12 @@ const Navbar = () => {
           <Logo>FRN</Logo>
         </Center>
         <Right>
+        <Link to="/register">
           <MenuItem>REGISTER</MenuItem>
+        </Link>
+        <Link to="/login">
           <MenuItem>SIGN IN</MenuItem>
+        </Link>
           <Link to="/cart">
           <MenuItem>
             <Badge color="primary">
