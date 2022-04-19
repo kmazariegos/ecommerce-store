@@ -1,7 +1,7 @@
-import Sidebar from "./components/sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar"; 
+// import Sidebar from "./components/sidebar/Sidebar";
+// import Topbar from "./components/topbar/Topbar"; 
 import "./App.css";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/Home"; 
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,9 +24,8 @@ function App() {
       <Route path="/login" element={<Login/>}></Route>
       {admin && (
         <>
-          <Topbar />
-          <div className="container">
-            <Sidebar />
+          {/* <Topbar /> */}
+            {/* <Sidebar /> */}
             <Route exact path="/" element={<Home/>}></Route>
             <Route path="/users" element={<UserList/>}></Route>
             <Route path="/user/:userId" element={<User/>}></Route>
@@ -34,7 +33,6 @@ function App() {
             <Route path="/products" element={<ProductList/>}></Route>
             <Route path="/product/:productId" element={<Product/>}></Route>
             <Route path="/newproduct" element={<NewProduct/>}></Route>
-          </div>
         </>
       )}
       </Routes>

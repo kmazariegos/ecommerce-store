@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import { useDispatch } from "react-redux";
-import { login } from "../../redux/apiCalls";
+import { login } from "../../redux/apiCalls"; 
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -10,6 +10,7 @@ const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
     login(dispatch, { username, password });
+    console.log('this step happened in loginpage')
   };
 
   return (
@@ -22,6 +23,7 @@ const Login = () => {
         justifyContent: "center",
       }}
     >
+    <form>
       <input
         style={{ padding: 10, marginBottom: 20 }}
         type="text"
@@ -37,6 +39,7 @@ const Login = () => {
       <button onClick={handleClick} style={{ padding: 10, width:100 }}>
         Login
       </button>
+      </form>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const userSlice = createSlice({
   initialState: {
     currentUser: null,
     isFetching: false,
-    error: false, 
+    error: false,  
   },
   reducers: {
     loginStart: (state) => {
@@ -19,7 +19,7 @@ const userSlice = createSlice({
     loginFailure: (state) => {
       state.isFetching = false;
       state.error = true;
-      console.log('this faileddd')
+      console.log('this failed in userRedux')
     },
     logout: (state) => {
       state.currentUser = null;

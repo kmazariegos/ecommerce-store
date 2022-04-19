@@ -1,5 +1,5 @@
 import { loginFailure, loginStart, loginSuccess } from "./userRedux";
-import { publicRequest, userRequest } from "../requestMethods";
+import { publicRequest, userRequest } from "../requestMethods"; 
 import {
   getProductFailure,
   getProductStart,
@@ -18,10 +18,11 @@ import {
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
   try {
+    console.log('this occured too')
     const res = await publicRequest.post("/auth/login", user);
     dispatch(loginSuccess(res.data));
   } catch (err) {
-    console.log(user, 'here it is the data')
+    console.log(user, 'this failed in apiCalls')
     dispatch(loginFailure());
   }
 };
