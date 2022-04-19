@@ -1,5 +1,3 @@
-// import Sidebar from "./components/sidebar/Sidebar";
-// import Topbar from "./components/topbar/Topbar"; 
 import "./App.css";
 import Home from "./pages/home/Home"; 
 import {
@@ -22,8 +20,6 @@ function App() {
   const admin = useSelector((state) => state.user.currentUser.userName === 'karla');
   return (
     <div>
-    {/* <Topbar /> 
-    <Sidebar /> */}
     <Router>
       <nav className='homeNav'>
         <Link to="/" className="links">Home</Link>
@@ -36,7 +32,6 @@ function App() {
       </nav>
       <Routes>
       <Route path="/login" element={admin ? <Navigate to="/"/> : <Login/>}></Route>
-      {console.log(admin, 'admin worked in App page, so its logged in')}
             <Route exact path="/" element={<Home/>}></Route>
             <Route path="/users" element={<UserList/>}></Route>
             <Route path="/user/:userId" element={<User/>}></Route>
