@@ -1,5 +1,5 @@
-// import Sidebar from "./components/sidebar/Sidebar";
-// import Topbar from "./components/topbar/Topbar"; 
+import Sidebar from "./components/sidebar/Sidebar";
+import Topbar from "./components/topbar/Topbar"; 
 import "./App.css";
 import Home from "./pages/home/Home"; 
 import {
@@ -20,12 +20,13 @@ function App() {
   const admin = useSelector((state) => state.user.currentUser);
   return (
     <Router>
+        <Topbar /> 
+        <Sidebar />
       <Routes>
       <Route path="/login" element={<Login/>}></Route>
+      {console.log(admin, 'this is admin')}
       {admin && (
         <>
-          {/* <Topbar /> */}
-            {/* <Sidebar /> */}
             <Route exact path="/" element={<Home/>}></Route>
             <Route path="/users" element={<UserList/>}></Route>
             <Route path="/user/:userId" element={<User/>}></Route>
