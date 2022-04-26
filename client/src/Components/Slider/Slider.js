@@ -10,7 +10,7 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  position: relative;
+  position: relative; 
   overflow: hidden;
   ${mobile({ display: "none" })}
 `;
@@ -72,9 +72,9 @@ const Desc = styled.p`
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
-  color: white;
+  color: black;
 `;
 
 const Slider = () => {
@@ -96,9 +96,9 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <Slide img={item.img} key={item.id}>
             <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Title style={{backgroundColor: "white"}}>{item.title}</Title>
+              <Desc style={{backgroundColor: "white"}}>{item.desc}</Desc>
+              <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
