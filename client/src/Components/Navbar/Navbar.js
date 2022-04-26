@@ -1,9 +1,12 @@
-import { Search, ShoppingCartOutlined } from "@mui/icons-material";
-import { Badge } from "@mui/icons-material";
+import { Search} from "@mui/icons-material";
+// import { Badge } from "@mui/icons-material";
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components"; 
 import { mobile } from "../../responsive"; 
-import { Link } from "react-router-dom";
+// import Register from '../../Pages/Register/Register'
+// import Login from '../../Pages/Login/Login'
+// import {BrowserRouter as Router , Routes, Route, Link} from "react-router-dom";
+
 
 const Container = styled.div`
   height: 60px;
@@ -61,12 +64,12 @@ const Right = styled.div`
   ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
-const MenuItem = styled.div`
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 25px;
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
-`;
+// const MenuItem = styled.div`
+//   font-size: 14px;
+//   cursor: pointer;
+//   margin-left: 25px;
+//   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+// `;
 
 const Navbar = () => {
   return (
@@ -83,19 +86,21 @@ const Navbar = () => {
           <Logo>FRN</Logo>
         </Center>
         <Right>
-        <Link to="/register">
-          <MenuItem>REGISTER</MenuItem>
-        </Link>
-        <Link to="/login">
-          <MenuItem>SIGN IN</MenuItem>
-        </Link>
-          <Link to="/cart">
+            {/* <Router>
+            <Link to="/register">REGISTER</Link>
+            <Link to="/login">SIGN IN</Link>
+              <Routes>
+                <Route path="/register" element={<Register/>} />
+                <Route path="/login" element={<Login/>}/>
+              </Routes>
+            </Router> */}
+          {/* <Link to="/cart">
           <MenuItem>
             <Badge color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
-          </Link>
+          </Link> */}
         </Right>
       </Wrapper>
     </Container>
