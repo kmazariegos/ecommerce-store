@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive"; 
 import slide2 from '../../Images/slide2.png'
+import Navbar from '../../Components/Navbar/Navbar';
+import Announcements from '../../Components/Announcements/Announcements';
 
 
 const Container = styled.div`
@@ -53,6 +55,9 @@ const Button = styled.button`
 
 const Register = () => {
   return (
+    <div>
+    <Announcements></Announcements>
+    <Navbar></Navbar>
     <Container>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
@@ -71,6 +76,7 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
+    </div>
   );
 };
 

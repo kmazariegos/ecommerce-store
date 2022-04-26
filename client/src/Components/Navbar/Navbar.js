@@ -4,9 +4,6 @@ import React from "react";
 import styled from "styled-components"; 
 import { mobile } from "../../responsive"; 
 import {Link} from "react-router-dom";
-// import Register from '../../Pages/Register/Register'
-// import Login from '../../Pages/Login/Login'
-// import {BrowserRouter as Router , Routes, Route, Link} from "react-router-dom";
 
 
 const Container = styled.div`
@@ -55,6 +52,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
+  text-decoration: none;
   ${mobile({ fontSize: "24px" })}
 `;
 const Right = styled.div`
@@ -84,20 +82,15 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>FRN</Logo>
+          {/* <Logo>FRN
+          <Link to='/'></Link>
+          </Logo> */}
+          <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><Logo>FRN</Logo></Link>
         </Center>
         <Right>
-            {/* <Router>
-            <Link to="/register">REGISTER</Link>
-            <Link to="/login">SIGN IN</Link>
-              <Routes>
-                <Route path="/register" element={<Register/>} />
-                <Route path="/login" element={<Login/>}/>
-              </Routes>
-            </Router> */}
             <Link to="/register"><MenuItem>REGISTER</MenuItem></Link>
             <Link to="/login"><MenuItem>SIGN IN</MenuItem></Link>
-          <Link to="/cart">
+            <Link to="/cart">
           <MenuItem>
             <Badge color="primary">
               <ShoppingCartOutlined />

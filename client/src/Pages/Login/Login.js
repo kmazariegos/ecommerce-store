@@ -4,6 +4,9 @@ import {mobile} from "../../responsive";
 import slide2 from '../../Images/slide2.png'
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import Navbar from '../../Components/Navbar/Navbar';
+import Announcements from '../../Components/Announcements/Announcements';
+// import {Link} from "react-router-dom";
 
 const Container = styled.div`
   width: 100vw;
@@ -75,6 +78,9 @@ const Login = () => {
     login(dispatch, { username, password });
   };
   return (
+    <div>
+    <Announcements></Announcements>
+    <Navbar></Navbar>
     <Container>
       <Wrapper>
         <Title>SIGN IN</Title>
@@ -97,6 +103,7 @@ const Login = () => {
         </Form>
       </Wrapper>
     </Container>
+    </div>
   );
 };
 
