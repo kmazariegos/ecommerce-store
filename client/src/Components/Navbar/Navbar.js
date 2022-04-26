@@ -82,9 +82,6 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          {/* <Logo>FRN
-          <Link to='/'></Link>
-          </Logo> */}
           <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><Logo>FRN</Logo></Link>
         </Center>
         <Right>
