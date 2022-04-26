@@ -95,6 +95,8 @@ const Navbar = () => {
                 <Route path="/login" element={<Login/>}/>
               </Routes>
             </Router> */}
+            <Link to="/register"><MenuItem>REGISTER</MenuItem></Link>
+            <Link to="/login"><MenuItem>SIGN IN</MenuItem></Link>
           <Link to="/cart">
           <MenuItem>
             <Badge color="primary">

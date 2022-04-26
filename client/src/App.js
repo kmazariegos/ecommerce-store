@@ -25,8 +25,8 @@ function App() {
         <Route path="/product/:id" element={<Product />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/success" element={<Success />}></Route>
-        <Route path="/login" element={user ? <Login/> : <Home />}></Route>
-        <Route path="/register" element={user ? <Register/> : <Home />}></Route>
+        <Route path="/login" element={user ? <Home/> : <Login/>}></Route>
+        <Route path="/register" element={user ? <Home/> : <Register/>}></Route>
       </Routes>
     </Router>
   </div>
