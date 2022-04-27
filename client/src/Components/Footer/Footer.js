@@ -10,6 +10,7 @@ import {
     Room,
     Twitter,
   } from "@mui/icons-material";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -89,7 +90,7 @@ const Footer = () => {
     <Container>
 
       <Left>
-        <Logo>FRN</Logo>
+        <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><Logo>FRN</Logo></Link>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -112,7 +113,7 @@ const Footer = () => {
       </Left>
 
       <Center>
-        <Title>Useful Links</Title>
+        <Title>Useful Links</Title> 
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>

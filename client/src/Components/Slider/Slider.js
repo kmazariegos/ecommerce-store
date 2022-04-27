@@ -94,10 +94,10 @@ const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
-          <Slide img={item.img} key={item.id}>
+          <Slide img={item.img} key={item.id} >
             <InfoContainer>
-              <Title style={{backgroundColor: "white"}}>{item.title}</Title>
-              <Desc style={{backgroundColor: "white"}}>{item.desc}</Desc>
+              <Title style={{backgroundColor: "white", opacity: "0.6"}}>{item.title}</Title>
+              <Desc style={{backgroundColor: "white", opacity: "0.6"}}>{item.desc}</Desc>
               <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>
