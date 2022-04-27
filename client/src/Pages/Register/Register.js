@@ -3,6 +3,7 @@ import { mobile } from "../../responsive";
 import slide2 from '../../Images/slide2.png'
 import Navbar from '../../Components/Navbar/Navbar';
 import Announcements from '../../Components/Announcements/Announcements';
+import Footer from '../../Components/Footer/Footer';
 
 
 const Container = styled.div`
@@ -76,6 +77,7 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
+    <Footer></Footer>
     </div>
   );
 };
