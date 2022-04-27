@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import Navbar from '../../Components/Navbar/Navbar';
 import Announcements from '../../Components/Announcements/Announcements';
-// import {Link} from "react-router-dom";
+import Footer from '../../Components/Footer/Footer';
+// import {Link} from "react-router-dom"; 
 
 const Container = styled.div`
   width: 100vw;
@@ -103,6 +104,7 @@ const Login = () => {
         </Form>
       </Wrapper>
     </Container>
+    <Footer></Footer>
     </div>
   );
 };
