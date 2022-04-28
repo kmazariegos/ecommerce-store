@@ -8,7 +8,7 @@ import Products from '../../Components/Products/Products';
 import Newsletter from '../../Components/Newsletter/Newsletter'; 
 import Footer from '../../Components/Footer/Footer';
 
-const Home = () => {
+const Home = () => { 
   return (
     <div>
       <Announcements></Announcements> 

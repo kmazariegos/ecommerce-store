@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components";
+import styled from "styled-components"; 
 import {
     FavoriteBorderOutlined,
     SearchOutlined,
@@ -63,7 +63,7 @@ const Icon = styled.div`
   transition: all 0.5s ease;
   &:hover {
     background-color: #e9f5f5;
-    transform: scale(1.1);
+    transform: scale(1.1); 
   }
 `;
 
