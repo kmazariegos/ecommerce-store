@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import styled from 'styled-components'
 import { Send } from "@mui/icons-material";
 import { mobile } from "../../responsive";
@@ -50,14 +51,15 @@ const Button = styled.button`
 `;
 
 const Newsletter = () => {
+  const [val, setVal] = useState();
   return (
     <Container>
         <Title>Newsletter</Title>
         <Desc>Get timely updates from your favorite products.</Desc>
         
         <InputContainer>
-        <Input placeholder="Your email" />
-        <Button>
+        <Input placeholder="Your email" type="text" value={val}/>
+        <Button onClick={() => setVal(() => "")}>
             <Send />
         </Button>
         </InputContainer>
