@@ -59,7 +59,7 @@ const Newsletter = () => {
         
         <InputContainer>
         <Input placeholder="Your email" type="text" value={val}/>
-        <Button onClick={() => setVal(() => "")}>
+        <Button onClick={() => setVal(() => 'SENT')}>
             <Send />
         </Button>
         </InputContainer>
