@@ -56,18 +56,18 @@ const Title = styled.h3`
   margin-bottom: 30px;
 `;
 
-const List = styled.ul`
+const List = styled.div`
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 `;
 
-const ListItem = styled.li`
-  width: 50%;
-  margin-bottom: 10px;
-`;
+// const ListItem = styled.div`
+//   width: 50%;
+//   margin-bottom: 10px;
+// `;
 
 const Right = styled.div`
   flex: 1;
@@ -115,16 +115,16 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title> 
         <List>
-          <Link to='/'><ListItem>Home</ListItem></Link>
-          <ListItem>Cart</ListItem>
-          <ListItem>Living Room</ListItem>
-          <ListItem>Kitchen</ListItem>
-          <ListItem>Dining</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>Home</Link>
+          <Link to='/cart' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>Cart</Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>Living Room</Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>Kitchen</Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>Dining</Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black', margin:'5px'}}>My Account</Link>
+          {/* <ListItem>Order Tracking</ListItem>
           <ListItem>Wishlist</ListItem>
           <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem>Terms</ListItem> */}
         </List>
       </Center>
 
