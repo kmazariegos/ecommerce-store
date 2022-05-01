@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components"; 
+import styled from "styled-components";  
 import {
     SearchOutlined,
     ShoppingCartOutlined,
@@ -52,7 +52,7 @@ const Circle = styled.div`
   position: absolute;
 `;
 
-const Image = styled.img`
+const Image = styled.img` 
   height: 75%;
   z-index: 2;
 `;
@@ -99,6 +99,7 @@ const Product = ({item}) => {
     <Container>
         <Circle />
         <Image src={item.img}/>
+        {console.log(typeof item.img)}
         <Info>
             <Icon>
                   <ShoppingCartOutlined onClick={handleOpen}/>

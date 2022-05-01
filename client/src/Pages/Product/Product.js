@@ -123,7 +123,7 @@ const Button = styled.button`
 const Product = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState("");
   const [size, setSize] = useState("");
@@ -134,7 +134,7 @@ const Product = () => {
       try {
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
-      } catch {}
+      } catch {} 
     };
     getProduct();
   }, [id]);
@@ -158,7 +158,9 @@ return (
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src={product.img} />
+        <Image src={product.img} alt='this is a chair'/>
+        {console.log(typeof product)}
+        {console.log(product)}
         </ImgContainer>
         <InfoContainer>
           <Title>{product.title}</Title>
