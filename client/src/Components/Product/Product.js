@@ -99,7 +99,6 @@ const Product = ({item}) => {
     <Container>
         <Circle />
         <Image src={item.img}/>
-        {console.log(typeof item.img)}
         <Info>
             <Icon>
                   <ShoppingCartOutlined onClick={handleOpen}/>

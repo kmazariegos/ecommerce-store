@@ -4,7 +4,7 @@ import { sliderItems } from './sliderData'
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import styled from "styled-components";
-import { mobile } from "../../responsive";
+import { mobile } from "../../responsive"; 
 
 const Container = styled.div`
   width: 100%;
