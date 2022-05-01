@@ -132,6 +132,7 @@ const Product = () => {
 useEffect(() => {
     const getProduct = async () => {
       try {
+        console.log(location)
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
       } catch {} 
@@ -159,7 +160,6 @@ return (
       <Wrapper>
         <ImgContainer>
         <Image src={product.img} alt='this is a chair'/>
-        {console.log(product.img)}
         </ImgContainer>
         <InfoContainer>
           <Title>{product.title}</Title>

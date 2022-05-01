@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-weight: 300;
-  text-align: center;
+  text-align: center; 
 `;
 
 const Top = styled.div`
@@ -251,8 +251,8 @@ const Cart = () => {
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
-              name="Lama Shop"
-              image="https://avatars.githubusercontent.com/u/1486366?v=4"
+              name="FRN"
+              image=""
               billingAddress
               shippingAddress
               description={`Your total is $${cart.total}`}

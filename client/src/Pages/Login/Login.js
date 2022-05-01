@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { login } from "../../redux/apiCalls";
 import {mobile} from "../../responsive";
-import slide2 from '../../Images/slide2.png'
+import slide2 from '../../images/slide2.png'
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import Navbar from '../../Components/Navbar/Navbar';
