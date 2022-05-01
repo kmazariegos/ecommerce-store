@@ -37,10 +37,6 @@ const Title = styled.h1`
   font-weight: 200;
 `;
 
-const Desc = styled.p`
-  margin: 20px 0px;
-`;
-
 const Price = styled.span`
   font-weight: 100;
   font-size: 40px;
@@ -156,7 +152,6 @@ return (
         </ImgContainer>
         <InfoContainer>
           <Title>{product.title}</Title>
-          <Desc>{product.desc}</Desc>
           <Price>$ {product.price}</Price>
           <FilterContainer>
             <Filter>

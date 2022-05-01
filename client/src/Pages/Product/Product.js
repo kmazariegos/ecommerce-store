@@ -5,7 +5,7 @@ import Announcement from '../../Components/Announcements/Announcements'
 import Newsletter from '../../Components/Newsletter/Newsletter'
 import Footer from '../../Components/Footer/Footer' 
 import {mobile} from '../../responsive'
-import { Add, Remove } from "@mui/icons-material";
+import { Add, Remove } from "@mui/icons-material"; 
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { publicRequest } from "../../requestMethods";
