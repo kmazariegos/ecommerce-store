@@ -9,7 +9,7 @@ import { Add, Remove } from "@mui/icons-material";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 
 const KEY = process.env.REACT_APP_STRIPE;
 

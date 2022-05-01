@@ -1,9 +1,5 @@
 import React from 'react'
 import styled from 'styled-components' 
-import Navbar from '../../Components/Navbar/Navbar' 
-import Announcement from '../../Components/Announcements/Announcements'
-import Newsletter from '../../Components/Newsletter/Newsletter'
-import Footer from '../../Components/Footer/Footer' 
 import {mobile} from '../../responsive'
 import { Add, Remove } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
@@ -154,8 +150,6 @@ const handleClick = () => {
 };
 return (
     <Container>
-      <Navbar />
-      <Announcement />
       <Wrapper>
         <ImgContainer>
           <Image src={product.img} />
@@ -190,8 +184,6 @@ return (
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-      <Newsletter />
-      <Footer />
     </Container>
   );
 };

@@ -1,11 +1,17 @@
 import React from 'react'
 import styled from "styled-components"; 
 import {
-    FavoriteBorderOutlined,
     SearchOutlined,
     ShoppingCartOutlined,
 } from "@mui/icons-material";
 import {Link} from 'react-router-dom';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ToggleButton from '@mui/material/ToggleButton'
+import { useState } from 'react';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import ProductModal from '../../Pages/Product/ProductModal'
+
 
 const Info = styled.div`
   opacity: 0;
@@ -67,23 +73,73 @@ const Icon = styled.div`
   }
 `;
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
 
 const Product = ({item}) => {
+  const [selected, setSelected] = useState(false);
+  const [selectedSearch, setSelectedSearch] = useState(false);
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+
   return (
     <Container>
         <Circle />
         <Image src={item.img}/>
         <Info>
             <Icon>
-              <ShoppingCartOutlined />
+                  <ShoppingCartOutlined onClick={handleOpen}/>
+                  <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style}>
+                        <ProductModal></ProductModal>
+                    </Box>
+                  </Modal>
             </Icon>
             <Icon>
               <Link to={`/product/${item._id}`}>
-              <SearchOutlined />
+                <ToggleButton
+                    color="primary"
+                    value="check"
+                    border="none"
+                    selected={selectedSearch}
+                    onChange={() => {
+                      setSelectedSearch(!selectedSearch);
+                    }}
+                  >
+                    <SearchOutlined />
+                  </ToggleButton>
               </Link>
             </Icon>
-            <Icon>
-              <FavoriteBorderOutlined />
+            <Icon border="none">
+                <ToggleButton
+                color="primary"
+                value="check"
+                border="none"
+                selected={selected}
+                onChange={() => {
+                  setSelected(!selected);
+                }}
+              >
+                <FavoriteIcon/>
+              </ToggleButton>
             </Icon>
         </Info>
     </Container>
