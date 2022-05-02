@@ -158,7 +158,7 @@ return (
       <Announcement />
       <Wrapper>
         <ImgContainer>
-        <Image src={product.img} alt='this is a chair'/>
+        <Image src={`../${product.img}`} alt='this is a chair'/>
         </ImgContainer>
         <InfoContainer>
           <Title>{product.title}</Title>
