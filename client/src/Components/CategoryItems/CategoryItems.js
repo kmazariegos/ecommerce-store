@@ -40,7 +40,7 @@ const Button = styled.button`
     background-color: white;
     color:gray;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 600; 
 `;
 
 

@@ -87,7 +87,7 @@ const ProductList = () => {
                   <Option value="desc">Price (desc)</Option>
                 </Select>
             </Filter>
-        </FilterContainer>
+        </FilterContainer> 
 
 
         <Products cat={cat} filters={filters} sort={sort}></Products>

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { popularProducts } from './ProductsData' 
 import styled from "styled-components";
 import Product from '../Product/Product'; 
 import { useState } from 'react';
@@ -61,7 +60,7 @@ const Products = ({cat, filters, sort}) => {
     }
   }, [sort]);
 
-
+console.log(products, 'component porudcts!!')
 
   return (
     <Container>

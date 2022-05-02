@@ -116,7 +116,7 @@ const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
   &:hover {
-    background-color: #f8f4f4;
+    background-color: #f8f4f4; 
   }
 `;
 
@@ -132,7 +132,6 @@ const Product = () => {
 useEffect(() => {
     const getProduct = async () => {
       try {
-        console.log(location)
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
       } catch {} 

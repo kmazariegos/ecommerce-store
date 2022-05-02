@@ -85,8 +85,8 @@ const Navbar = () => {
           <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><Logo>FRN</Logo></Link>
         </Center>
         <Right>
-            <Link to="/register"><MenuItem>REGISTER</MenuItem></Link>
-            <Link to="/login"><MenuItem>SIGN IN</MenuItem></Link>
+            <Link to="/register" style={{ textDecoration: 'none', color: 'black' }}><MenuItem>REGISTER</MenuItem></Link>
+            <Link to="/login" style={{ textDecoration: 'none', color: 'black' }}><MenuItem>SIGN IN</MenuItem></Link>
             <Link to="/cart">
           <MenuItem>
             <Badge color="primary">
