@@ -11,7 +11,7 @@ dotenv.config()
 
 mongoose
 .connect(process.env.MONGO_URL)
-.then(()=>{console.log("DBConnect success")}) 
+.then(()=>{console.log("DBConnect success")})  
 .catch((err)=>{console.log(err)})
 
 app.use(express.json())
