@@ -98,7 +98,7 @@ const Product = ({item}) => {
   return (
     <Container>
         <Circle />
-        <Image src={item.img}/> 
+        <Image src={`../${item.img}`} alt='this is the filtered sction'/> 
         <Info>
             <Icon>
                   <ShoppingCartOutlined onClick={handleOpen}/>

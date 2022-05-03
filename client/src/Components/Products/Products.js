@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import styled from "styled-components";
+import React, { useEffect } from 'react';  
+import styled from "styled-components"; 
 import Product from '../Product/Product'; 
-import { useState } from 'react';
+import { useState } from 'react'; 
 import axios from 'axios';
 
 const Container = styled.div`
@@ -43,7 +43,6 @@ const Products = ({cat, filters, sort}) => {
       );
   }, [products, cat, filters]);
 
-
   useEffect(() => {
     if (sort === "newest") {
       setFilteredProducts((prev) =>
@@ -61,6 +60,7 @@ const Products = ({cat, filters, sort}) => {
   }, [sort]);
 
 console.log(products, 'component porudcts!!')
+console.log(filteredProducts, 'fffiltered porudcts!!')
 
   return (
     <Container>
