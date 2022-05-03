@@ -122,15 +122,17 @@ const Button = styled.button`
 
 const Product = () => {
   const location = useLocation();
+  console.log(location, 'herererere')
   const id = location.pathname.split("/")[2];
+  console.log(location.pathname, 'pathnameherererere')
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState("");
   const [size, setSize] = useState("");
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
 
 useEffect(() => {
-    const getProduct = async () => {
+    const getProduct = async () => { 
       try {
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);

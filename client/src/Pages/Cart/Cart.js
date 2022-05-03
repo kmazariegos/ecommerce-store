@@ -243,7 +243,7 @@ const Cart = () => {
               <SummaryItemPrice>$ 5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
-              <SummaryItemText>Shipping Discount</SummaryItemText>
+              <SummaryItemText>Shipping Discount</SummaryItemText>  
               <SummaryItemPrice>$ -5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
@@ -261,7 +261,7 @@ const Cart = () => {
               stripeKey={KEY}
             >
               <Button>CHECKOUT NOW</Button>
-            </StripeCheckout>
+            </StripeCheckout> 
           </Summary>
         </Bottom>
       </Wrapper>

@@ -114,7 +114,7 @@ const Product = ({item}) => {
                   </Modal>
             </Icon>
             <Icon>
-              <Link to={`/product/${item._id}`}>
+              <Link to={`/product/${item._id}`}> 
                 <ToggleButton
                     color="primary"
                     value="check"

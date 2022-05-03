@@ -68,7 +68,7 @@ console.log(products, 'component porudcts!!')
         ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
         : products
             .slice(0, 8)
-            .map((item) => <Product item={item} key={item.id} />)}
+            .map((item) => <Product item={item} key={item.id} />)} 
     </Container>
   )
 }

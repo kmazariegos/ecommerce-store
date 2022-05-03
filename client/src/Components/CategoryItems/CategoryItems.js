@@ -44,7 +44,7 @@ const Button = styled.button`
 `;
 
 
-const CategoryItems = ({item}) => { 
+const CategoryItems = ({item}) => {  
   return (
     <Container>
       <Link to={`/products/${item.cat}`}>

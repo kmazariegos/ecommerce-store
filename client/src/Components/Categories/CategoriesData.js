@@ -1,7 +1,7 @@
   export const categories = [
     {
       id: 1,
-      img: 'images/sofa1.png', 
+      img: 'images/sofa1.png',  
       title: "Sofas",
       cat: "sofa"
     },
