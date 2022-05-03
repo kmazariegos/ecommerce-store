@@ -59,8 +59,6 @@ const Products = ({cat, filters, sort}) => {
     }
   }, [sort]);
 
-console.log(products, 'component porudcts!!')
-console.log(filteredProducts, 'fffiltered porudcts!!')
 
   return (
     <Container>
