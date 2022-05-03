@@ -1,5 +1,6 @@
-import { Search, ShoppingCartOutlined} from "@mui/icons-material";
-import { Badge } from "@mui/icons-material";
+import { Search } from "@mui/icons-material";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import { Badge } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components"; 
 import { mobile } from "../../responsive"; 
@@ -89,9 +90,7 @@ const Navbar = () => {
             <Link to="/login" style={{ textDecoration: 'none', color: 'black' }}><MenuItem>SIGN IN</MenuItem></Link>
             <Link to="/cart">
           <MenuItem>
-            <Badge color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
+              <ShoppingCartIcon />
           </MenuItem>
           </Link>
         </Right>
