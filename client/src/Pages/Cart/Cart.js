@@ -199,7 +199,7 @@ const Cart = () => {
             <TopText>{`Shopping Bag(${cart.quantity})`}</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
-          <TopButton type="filled">CHECKOUT NOW</TopButton>
+          <TopButton type="filled">CHECKOUT NOW</TopButton> 
         </Top>
         <Bottom>
           <Info>
@@ -222,9 +222,11 @@ const Cart = () => {
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
-                    <Add />
+                    <button onClick={console.log('add')}>
+                    <Add/>
+                    </button>
                     <ProductAmount>{product.quantity}</ProductAmount>
-                    <Remove />
+                    <Remove onClick={console.log('remove')}/>
                   </ProductAmountContainer>
                   <ProductPrice>
                     $ {product.price * product.quantity}
