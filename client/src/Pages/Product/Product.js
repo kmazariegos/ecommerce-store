@@ -138,7 +138,7 @@ useEffect(() => {
         setProduct(res.data);
       } catch {} 
     };
-    getProduct();
+    getProduct(); 
 }, [id]);
 
 const handleQuantity = (type) => {
