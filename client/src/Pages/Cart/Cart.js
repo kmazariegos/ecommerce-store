@@ -194,7 +194,7 @@ const addProduct = ()=>{
   console.log('this worked in cart add')
 }
 
-  console.log(cart, 'cart state is herez2!!')
+console.log(cart, 'cart state is herez2!!')
 
   return (
     <Container>
