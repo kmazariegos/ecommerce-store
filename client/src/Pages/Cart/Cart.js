@@ -186,8 +186,12 @@ const Cart = () => {
   }, [stripeToken, cart.total, history]);
 
 
-const handleClick = ()=>{
-  console.log('this worked in cart')
+const removeProduct = ()=>{
+  console.log('this worked in cart remove')
+}
+
+const addProduct = ()=>{
+  console.log('this worked in cart add')
 }
 
   console.log(cart, 'cart state is herez2!!')
