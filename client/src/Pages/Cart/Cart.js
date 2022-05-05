@@ -170,7 +170,7 @@ const Cart = () => {
     setStripeToken(token);
   };
 
-  useEffect(() => {
+useEffect(() => {
     const makeRequest = async () => {
       try {
         const res = await userRequest.post("/checkout/payment", {
@@ -183,7 +183,7 @@ const Cart = () => {
       } catch {}
     };
     stripeToken && makeRequest();
-  }, [stripeToken, cart.total, history]);
+}, [stripeToken, cart.total, history]);
 
 
 const removeProduct = ()=>{
