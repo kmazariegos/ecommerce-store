@@ -185,6 +185,11 @@ const Cart = () => {
     stripeToken && makeRequest();
   }, [stripeToken, cart.total, history]);
 
+
+const handleClick = ()=>{
+  console.log('this worked in cart')
+}
+
   console.log(cart, 'cart state is herez2!!')
 
   return (
@@ -222,11 +227,9 @@ const Cart = () => {
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
-                    <button onClick={console.log('add')}>
-                    <Add/>
-                    </button>
+                    <Add onClick={handleClick}/>
                     <ProductAmount>{product.quantity}</ProductAmount>
-                    <Remove onClick={console.log('remove')}/>
+                    <Remove onClick={handleClick}/>
                   </ProductAmountContainer>
                   <ProductPrice>
                     $ {product.price * product.quantity}
