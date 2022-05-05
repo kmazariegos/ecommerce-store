@@ -231,9 +231,9 @@ const addProduct = ()=>{
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
-                    <Add onClick={handleClick}/>
+                    <Add onClick={addProduct}/>
                     <ProductAmount>{product.quantity}</ProductAmount>
-                    <Remove onClick={handleClick}/>
+                    <Remove onClick={removeProduct}/>
                   </ProductAmountContainer>
                   <ProductPrice>
                     $ {product.price * product.quantity}
