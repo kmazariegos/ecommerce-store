@@ -6,7 +6,7 @@ export const productSlice = createSlice({
     products: [],
     isFetching: false,
     error: false,
-  },
+  }, 
   reducers: {
     //GET ALL
     getProductStart: (state) => {

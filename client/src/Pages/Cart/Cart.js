@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
 import { useNavigate } from "react-router-dom"; 
 
+
 const KEY = process.env.REACT_APP_STRIPE;
 
 
@@ -165,6 +166,8 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
   const history = useNavigate();
+  const [quantity, setQuantity] = useState(1);
+  // const [product, setProduct] = useState({});
 
   const onToken = (token) => {
     setStripeToken(token);
@@ -186,13 +189,14 @@ useEffect(() => {
 }, [stripeToken, cart.total, history]);
 
 
-const removeProduct = ()=>{
-  console.log('this worked in cart remove')
-}
+const handleQuantity = (type) => {
+  if (type === "dec") {
+    quantity > 1 && setQuantity(quantity - 1);
+  } else {
+    setQuantity(quantity + 1);
+  }
+};
 
-const addProduct = ()=>{
-  console.log('this worked in cart add')
-}
 
 console.log(cart, 'cart state is herez2!!')
 
@@ -231,9 +235,9 @@ console.log(cart, 'cart state is herez2!!')
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
-                    <Add onClick={addProduct}/>
+                    <Add onClick={() => handleQuantity("inc")}/>
                     <ProductAmount>{product.quantity}</ProductAmount>
-                    <Remove onClick={removeProduct}/>
+                    <Remove  onClick={() => handleQuantity("dec")}/>
                   </ProductAmountContainer>
                   <ProductPrice>
                     $ {product.price * product.quantity}

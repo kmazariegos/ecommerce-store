@@ -4,7 +4,7 @@ import productReducer from "./productRedux";
 import {
   persistStore,
   persistReducer,
-  FLUSH,
+  FLUSH, 
   REHYDRATE,
   PAUSE,
   PERSIST,
